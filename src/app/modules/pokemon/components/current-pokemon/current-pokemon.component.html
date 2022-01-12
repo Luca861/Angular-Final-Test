@@ -1,0 +1,15 @@
+<div class="card" style="width: 28rem; height: 38rem">
+  <div class="card-body">
+    <h5 class="card-title">{{ currentPokemon.name }}</h5>
+    <img [src]="currentPokemon.image" />
+    <h6 class="card-subtitle mb-2 text-muted">Dettagli</h6>
+    <p class="card-text">Weight: {{ currentPokemon.weight }}</p>
+    <p class="card-text">Height: {{ currentPokemon.height }}</p>
+    <p class="card-text">ID : {{ currentPokemon.id }}</p>
+    <button type="button" (click)="selectedPokemon()" class="btn btn-primary">
+      Cattura
+    </button>
+    <button type="button" (click)="refusedPokemon()" class="btn btn-danger">Rifiuta</button>
+  </div>
+  <p>E' apparso un {{currentPokemon.name}} selvatico</p>
+</div>

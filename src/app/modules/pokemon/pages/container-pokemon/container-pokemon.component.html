@@ -1,0 +1,5 @@
+<div class="container d-flex justify-content-between mt-5 pt-5">
+  <app-refused-pokemon [refPokemon] ="refPokemon"></app-refused-pokemon>
+  <app-current-pokemon (selected)="selectedPokemon($event)" (refused)="refusedPokemon($event)"></app-current-pokemon>
+  <app-selected-pokemon [okPokemon]="okPokemon"></app-selected-pokemon>
+</div>
