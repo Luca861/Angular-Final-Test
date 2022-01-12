@@ -1,0 +1,9 @@
+<div class="d-flex flex-column">
+  <ng-container *ngFor="let item of okPokemon; let i = index">
+    <div *ngIf="i < 6">
+   <img [src]='item.image'>
+    {{ item.name }}
+  </div>
+  </ng-container>
+</div>
+
